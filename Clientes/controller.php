@@ -43,7 +43,6 @@ if(isset($_POST["emap"])){ $cliente->setemail($_POST['emap']);}
 		$serial = serialize($cliente);
 		file_put_contents('store', $serial);
 		//header('location:?m=Clientes&s=edit');
-		echo '<script> alert ("Cargando..."); </script>';
 		echo '<script language=Javascript> location.href="index.php?m=Clientes&s=edit"; </script>';
 		die(); 
 
@@ -56,7 +55,6 @@ if(isset($_POST["emap"])){ $cliente->setemail($_POST['emap']);}
 		$cliente->update_Datos_Personales();
 
 		//header('location:?m=Clientes');
-		echo '<script> alert ("Cliente Actualizado con exito !!"); </script>';
 		echo '<script language=Javascript> location.href="index.php?m=Clientes"; </script>';
 		die(); 
 
@@ -68,7 +66,6 @@ if(isset($_POST["emap"])){ $cliente->setemail($_POST['emap']);}
 		$cliente->delete_datos_personales();
 		$redi=$_SERVER["PHP_SELF"];
 		//header("Location: index.php?m=Clientes");
-		echo '<script> alert ("El Cliente ha sido eliminado !!"); </script>';
 		echo '<script language=Javascript> location.href="index.php?m=Clientes"; </script>';
 		die(); 
 
