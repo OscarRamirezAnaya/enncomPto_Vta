@@ -32,7 +32,6 @@ if(isset($_POST["emap"])){ $cliente->setemail($_POST['emap']);}
 		$cliente->add_Datos_Personales();
 		//$redi=$_SERVER["PHP_SELF"];
 		//header('Location:index.php?m=Clientes');
-		echo '<script> alert ("Cliente creado con exito !!"); </script>';
 		echo '<script language=Javascript> location.href="index.php?m=Clientes"; </script>';
 		die(); 
 	}

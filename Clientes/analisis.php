@@ -18,8 +18,6 @@
 
 		$rows = $db->query($query);
 
-	     var_dump($rows);
-
 
 
  ?>
