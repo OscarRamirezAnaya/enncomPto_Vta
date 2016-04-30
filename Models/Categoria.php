@@ -6,7 +6,7 @@
 		
 		//Clientes 
 
-		 Class Cliente 
+		 Class Categoria 
 		{
 
 			private $id;

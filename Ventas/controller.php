@@ -54,7 +54,6 @@ if($action == ''){echo 'error';}
 		$serial = serialize($Venta);
 		file_put_contents('store', $serial);
 		//header('location:?m=Ventas&s=new');
-		echo '<script> alert ("Cargando..."); </script>';
 		echo '<script language=Javascript> location.href="index.php?m=Ventas&s=new"; </script>';
 		die(); 
 	}
@@ -65,7 +64,6 @@ if($action == ''){echo 'error';}
 		$Venta->add_HEAD_Venta();
 		$Venta->add_LINES_Venta();
 		//header('location:?m=Ventas&s=controller&v=view&q='.$Venta->getidH());
-		echo '<script> alert ("Ejecutando transaccion..."); </script>';
 		echo '<script language=Javascript> location.href="index.php?m=Ventas&s=controller&v=view&q='.$Venta->getidH().'";</script>';
 		die(); 
 
@@ -77,7 +75,6 @@ if($action == ''){echo 'error';}
 		$serial = serialize($Venta);
 		file_put_contents('store', $serial);
 		//header('location:?m=Ventas&s=view');
-		echo '<script> alert ("Cargando detalles ..."); </script>';
 		echo '<script language=Javascript> location.href="index.php?m=Ventas&s=view";</script>';
 		die(); 
 	
